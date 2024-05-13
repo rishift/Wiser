@@ -1,0 +1,21 @@
+{
+    "name": "Wiser",
+    "version": "1.0.0",
+    "description": "Wiser - Wireless Serial Monitor for ESPs based on UDP.",
+    "keywords": ["Wiser", "serial", "monitor", "wireless"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rishift/Wiser.git"
+	},
+
+    "authors": [
+        {
+            "name": "Rishi Vishwakarma",
+            "email": "rishift@outlook.in",
+            "url": "https://github.com/rishift"
+        }
+    ],
+    "frameworks": ["arduino"],
+    "platforms": ["espressif8266", "espressif32"],
+    "license": "GPL-3.0-or-later"
+}
