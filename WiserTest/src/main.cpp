@@ -8,22 +8,17 @@ Wiser ws;
 
 void setup()
 {
-  Serial.begin(9600);
-  WiFi.begin("JioFiber-T2JA8", "OhShiath3uivuj4i");
-  while (WiFi.status() != WL_CONNECTED) delay(500);
-  Serial.println(WiFi.localIP());
-  ws.begin(5781);
+	Serial.begin(9600);
+	WiFi.begin("JioFiber-T2JA8", "OhShiath3uivuj4i");
+	while (WiFi.status() != WL_CONNECTED)
+		delay(500);
+	Serial.println(WiFi.localIP());
+
+	ws.init();
 }
 
 void loop()
 {
-  ws.write((const unsigned char *)"hello");
-  delay(1000);
-
-  if (ws.available() > 0)
-  {
-    ws.read();
-    Serial.println(ws.data);
-  }
-  
+	ws.write(ws.read());
+	delay(1000);
 }
