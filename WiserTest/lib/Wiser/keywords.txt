@@ -1,2 +1,2 @@
-Wiser   KEYWORD2
+Wiser   KEYWORD1
 begin   KEYWORD2

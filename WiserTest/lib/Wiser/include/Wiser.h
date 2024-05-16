@@ -12,20 +12,19 @@
 #define WISER_PORT 5781
 #define WISER_BUFFERSIZE 128
 
-
 class Wiser
 {
-	public:
-		Wiser();
-		void init();
-		void write(char *message , bool newline = true);
-		char * read();
+public:
+	Wiser();
+	void init();
+	void write(char *message, bool newline = true);
+	char *read();
 
-	private:
-		WiFiUDP _transport;
-		IPAddress _remoteIP;
-		uint16_t _remotePort;
-		char _data[WISER_BUFFERSIZE];
+private:
+	WiFiUDP _transport;
+	IPAddress _remoteIP;
+	uint16_t _remotePort;
+	char _data[WISER_BUFFERSIZE];
 };
 
 #endif
